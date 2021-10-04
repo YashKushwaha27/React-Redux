@@ -1,19 +1,5 @@
 import { actionTypes } from "../constants/actionTypes";
 
-export const increaseValue = (count) => {
-  return {
-    type: actionTypes.INCREASE,
-    payload: count,
-  };
-};
-
-export const decreaseValue = (count) => {
-  return {
-    type: actionTypes.DECREASE,
-    payload: count,
-  };
-};
-
 export const getData = (data) => {
   return {
     type: actionTypes.GET_DATA,
