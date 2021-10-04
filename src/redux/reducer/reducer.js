@@ -2,17 +2,6 @@ import { actionTypes } from "../constants/actionTypes";
 
 const initialState = {};
 
-// export const countReducer = (state=initialState, {type, payload}) => {
-//     switch (type) {
-//         case actionTypes.INCREASE:
-//             return {...state, count: state?.count + payload}
-//         case actionTypes.DECREASE:
-//             return {...state, count: state?.count + payload}
-//         default:
-//             return state
-//     }
-// }
-
 export const productDataReducer = (state = initialState, { type, payload }) => {
   console.log("reducer reached");
   switch (type) {
