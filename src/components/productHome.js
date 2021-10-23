@@ -27,12 +27,12 @@ const ProductPage = () => {
         </a>
       </div>
       <div
-        style={{ marginTop: "10px", marginLeft: "10px", marginRight: "10px" }}
+        style={{ marginTop: "10px", marginLeft: "20px", marginRight: "10px" }}
       >
         <CardGroup itemsPerRow={5}>
           {data ? (
             data.map((m) => (
-              <Card key={m.id}>
+              <Card key={m.id} style={{width: "250px"}}>
                 <Card.Content>
                   <div style={{ height: "270px" }}>
                     <Image src={m.image} size="small" />
