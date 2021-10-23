@@ -6,7 +6,7 @@ import SelectedProduct from "./components/selectedProduct";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/" exact component={ProductPage} />
           <Route path="/product/:id" component={SelectedProduct} />
